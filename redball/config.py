@@ -442,7 +442,7 @@ def create_botType(**kwargs):
         """INSERT INTO rb_botTypes
                 (name, description, moduleName)
                 VALUES
-                (?,?,?,?)
+                (?,?,?)
             ;""",
         (
             kwargs["description"].lower().strip().replace(" ", "-"),
